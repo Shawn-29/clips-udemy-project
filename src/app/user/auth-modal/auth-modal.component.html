@@ -1,0 +1,16 @@
+<app-modal modalId='authentication'>
+    <!-- Angular will not place this element into this position in the ModalComponent,
+        instead it will find an ngContent tag with a property of "select='[heading]'"
+        and place it there; called "multi-slot content projection" -->
+    <p class="text-2xl font-bold" heading>Your Account</p>
+    <!-- <p class="text-2xl font-bold" multi-slot-projection-test>Your Account 2</p> -->
+
+    <app-tabs-container>
+        <app-tab tabTitle='Login'>
+            <app-login></app-login>
+        </app-tab>
+        <app-tab tabTitle='Register'>
+            <app-register></app-register>
+        </app-tab>
+    </app-tabs-container>
+</app-modal>

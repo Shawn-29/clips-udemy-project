@@ -1,0 +1,19 @@
+<app-nav></app-nav>
+
+<router-outlet></router-outlet>
+
+<!--
+	If the user is not logged in, render the authentication modal
+	containing the login and register forms.
+
+	auth.isAuthenticated$ is an Observable and it can be subscribed
+	to by using the async pipe.
+	
+	The subscription will receive user credentials if the user is
+	logged in or null otherwise.
+
+	Convert the result to a boolean to perform conditional rendering.
+-->
+<app-auth-modal
+	*ngIf='!(auth.isAuthenticatedWithDelay$ | async)'
+></app-auth-modal>
