@@ -2,8 +2,8 @@
 
 This application allows users to quickly and easily upload videos to share with their friends.
 
-It was built as the primary project during the Udemy course "Complete Angular Developer
-in 2023: Zero to Mastery."
+It was built as the primary project during the Udemy course [Complete Angular Developer
+in 2023: Zero to Mastery](https://www.udemy.com/course/complete-angular-developer-zero-to-mastery/).
 
 ## Features
 
